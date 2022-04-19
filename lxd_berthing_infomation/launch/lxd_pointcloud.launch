@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="lxd_berthing_infomation" pkg="lxd_berthing_infomation" type="lxd_berthing_infomation" output="screen"  args="2"></node>
+
+    <node name="rviz" pkg="rviz" type="rviz"  required="true" args="-d $(find lxd_berthing_infomation)/rviz/lxd_berthing_infomation.rviz"/>  
+    
+
+    
+</launch>
